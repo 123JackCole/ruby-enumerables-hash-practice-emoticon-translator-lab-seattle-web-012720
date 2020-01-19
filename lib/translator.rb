@@ -2,11 +2,13 @@ require "yaml"
 
 def load_library(file)
   unfiltered_library = YAML.load_file(file)
+  library = {get_meaning: {}, get_emoticon: {}}
   
-  unfiltered_library.each do ||
-
-  #library[:get_meaning] = YAML.load_file(file)
-  #library[:get_emoticon] = YAML.load_file(file)
+  unfiltered_library.map do |key, value|
+    
+    library[:get_meaning][key] = value[0]
+  
+  end
   pp unfiltered_library
 end
 
