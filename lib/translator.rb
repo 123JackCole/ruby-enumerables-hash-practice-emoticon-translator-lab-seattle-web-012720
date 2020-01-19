@@ -1,8 +1,8 @@
 require "yaml"
 
 def load_library(file)
-  library = {:get_meaning}
-  library = YAML.load_file(file)
+  library = {:get_meaning = {}, :get_emoticon = {}}
+  #library = YAML.load_file(file)
   library
 end
 
