@@ -16,12 +16,13 @@ end
 def get_japanese_emoticon(file, western_emoticon)
   
   library = load_library(file)
-  p library.find(western_emoticon)
+  library[:get_emoticon][western_emoticon]
   
 end
 
 def get_english_meaning(file, japanese_emoticon)
   
-  
+  library = load_library(file)
+  library[:get_meaning][japanese_emoticonn]
   
 end
