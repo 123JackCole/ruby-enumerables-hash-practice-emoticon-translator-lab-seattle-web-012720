@@ -7,7 +7,7 @@ def load_library(file)
   unfiltered_library.map do |key, value|
     
     library[:get_meaning][value[1]] = key
-    library[:get_emoticon][value[0]] = key
+    library[:get_emoticon][value[0]] = value[1]
   
   end
   p library
