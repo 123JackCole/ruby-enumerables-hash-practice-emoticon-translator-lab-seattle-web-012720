@@ -16,7 +16,7 @@ end
 def get_japanese_emoticon(file, western_emoticon)
   
   load_library(file)
-  library.find(western_emoticon)
+  p library.find(western_emoticon)
   
 end
 
