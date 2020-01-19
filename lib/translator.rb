@@ -10,16 +10,17 @@ def load_library(file)
     library[:get_emoticon][value[0]] = value[1]
   
   end
-  library
+  p library
 end
 
-def get_japanese_emoticon(western_emoticon)
+def get_japanese_emoticon(file, western_emoticon)
   
+  load_library(file)
   
   
 end
 
-def get_english_meaning
+def get_english_meaning(file, japanese_emoticon)
   
   
   
